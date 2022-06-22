@@ -13,21 +13,20 @@ console.log(resultOne);
 
 const resultTwo = arr.find(el => el > 7);
 if (resultTwo == undefined) {
-  console.log("Все элементы меньше 7")
+  console.log("Все элементы меньше 7");
 } else {
   console.log(resultTwo);
 }
 
 //4---------------------------------
 
-const resultThree = arr.map((el)  => el * 2);
+const resultThree = arr.map(el  => el * 2);
 console.log(resultThree);
 
 //5---------------------------------
 
 const resultFour = arr.reduce((previousValue, currentValue) =>
-  !(currentValue % 2) ? previousValue + currentValue : previousValue
-);
+  currentValue % 2 ? previousValue : previousValue + currentValue, 0);
 console.log(resultFour);
 
 //6---------------------------------

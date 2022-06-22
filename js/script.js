@@ -44,8 +44,6 @@ const arrThree = [];
 for(i = 0; i < arrTwo.length; i++) {
   if (arrOne.includes(arrTwo[i]) == true) {
     arrThree.push(arrTwo[i]);
-  } else {
-    continue;
   }
 }
 console.log(arrThree);
